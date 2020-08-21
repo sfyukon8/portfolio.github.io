@@ -1,0 +1,506 @@
+@charset "UTF-8";
+
+body {
+  background-color: #608862 font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", "ヒイラギ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, sans-serif;
+}
+
+header,
+h2,
+h3,
+.global,
+th,
+dt {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.wrapper {
+  width: 1100px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+/*header---------------------*/
+header {
+  padding: 0px 5px 0 5px;
+  /*
+  background-image: URL(image/top_sake_illu.png);
+  background-size: cover;
+  background: linear-gradient(30deg, rgba(0, 0, 0, 0.8)20%, rgba(255, 255, 255, 0)80%), URL(image/top_sake.png);
+*/
+}
+
+.header-logo img {
+  width: 1100px;
+  /*  height: auto;*/
+}
+
+/*
+header h1 {
+  font-size: 2.5em;
+  font-weight: 5000;
+  line-height: 50px;
+  text-shadow: 2px 2px 2px darkorange;
+  padding-left: 54px;
+  margin-bottom: 10px;
+}
+*/
+/*
+header p {
+  font-size: 1.2em;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-shadow: 2px 2px 2px darkorange;
+}
+*/
+/*nav gloval--------------------*/
+nav.global {
+  height: 30px;
+  /*  margin-top: 5px;*/
+  padding-bottom: 35px;
+}
+
+nav.global ul li {
+  width: 20%;
+  float: left;
+  list-style: none;
+}
+
+nav.global ul li a {
+  display: block;
+  color: #3b3838;
+  font-weight: 500;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: none;
+  /*  line-height: 30px;*/
+  border-right: 1px solid black;
+  background-color: #fff;
+}
+
+nav.global ul li:last-child a {
+  border-right: none;
+}
+
+nav.global ul li a:hover span {
+  border-bottom: 1.5px solid #2d446f;
+  /*  border-collapse: separate;*/
+  /*  border-spacing: 100px 100px;
+  */
+  /*  ＊下のボーダーを少し下げたい場合はどうするか*/
+
+}
+
+.index nav.global li:nth-child(1) a span,
+.tool nav.global li:nth-child(2) a span,
+.catalog nav.global li:nth-child(3) a span,
+.common nav.global li:nth-child(4) a span {
+  color: #EACE34;
+  border-bottom: 1.5px solid #EACE34;
+  padding: 2 2em;
+}
+
+/*container-------------------*/
+.container {
+  /*  padding: 20px 30px 60px　30px;*/
+}
+
+/*main-------------------------*/
+main {
+  /*  background-color: #9f9;*/
+  width: 850px;
+  float: left;
+}
+
+/*main images-------------------*/
+/*＊文字の高さを揃えるには何が一番効率がいいか。今回はmarginとかで無理やり調整した*/
+/*＊画像の使いたい範囲をCSSで調整できるか（拡大、縮小）*/
+
+
+/*
+main .main-img {
+  width: 850px;
+  height: 300px;
+  margin: 0 0 10px 24px;
+  background-color: #eee;
+  letter-spacing: -6px;
+}
+*/
+section .story {
+  width: 850px;
+}
+
+.main-img1 {
+  position: relative;
+}
+
+.main-img1 img {
+  width: 390px;
+  height: 240px;
+  float: left;
+  border: solid 4px #EACE34;
+}
+
+.main-img1 p {
+  position: absolute;
+  color: white;
+  /*  top: 0;*/
+  font-weight: bold;
+  font-size: 3em;
+  font-family: Quicksand, sans-serif;
+  margin: 160px 0 0 15px;
+  text-shadow: 1px 1px 3px #302a2a;
+
+}
+
+.main-img2 {
+  position: relative;
+
+}
+
+.main-img2 img {
+  width: 390px;
+  height: 240px;
+  border: solid 4px #EACE34;
+  margin-left: 20px;
+
+}
+
+.main-img2 p {
+  position: absolute;
+  color: white;
+  top: 0;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: Quicksand, sans-serif;
+  margin: 160px 0 0 440px;
+  text-shadow: 1px 1px 3px #302a2a;
+
+}
+
+.main-img3 {
+  position: relative;
+}
+
+.main-img3 img {
+  width: 390px;
+  height: 240px;
+  border: solid 4px #EACE34;
+  margin-top: 20px;
+
+}
+
+.main-img3 p {
+  position: absolute;
+  color: white;
+  top: 0;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: Quicksand, sans-serif;
+  margin: 180px 0 0 20px;
+  text-shadow: 1px 1px 3px #302a2a;
+
+}
+
+.main-img4 {
+  position: relative;
+  /*  <a href="https://www.photo-ac.com/profile/1405627">丸岡ジョー</a>さんによる<a href="https://www.photo-ac.com/">写真AC</a>からの写真                            */
+}
+
+.main-img4 img {
+  width: 390px;
+  height: 240px;
+  border: solid 4px #EACE34;
+  margin-top: -254px;
+  margin-right: 34px;
+  float: right;
+
+}
+
+.main-img4 p {
+  position: absolute;
+  color: white;
+  top: 0;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: Quicksand, sans-serif;
+  margin: -92px 0 0 440px;
+  text-shadow: 1px 1px 3px #302a2a;
+
+}
+
+/*main images-------------------*/
+
+main h2 {
+  font-weight: 500;
+  font-size: 1.50em;
+  border-left: 13px solid #EACE34;
+  padding-left: 10px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-style: bold;
+  color: #3b3838;
+}
+
+main p {
+  margin-bottom: 30px;
+  margin-left: 24px;
+  text-align: justify;
+  color: #3b3838;
+}
+
+main section {
+  margin-bottom: 20px;
+}
+
+main .commentary {
+  width: 490px;
+  float: left;
+}
+
+main figure {
+  width: 250px;
+  float: right;
+}
+
+main figure img {
+  width: 500px;
+  height: auto;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+
+}
+
+main figcaption {
+  font-size: 0.9em;
+  color: #3b3838;
+
+}
+
+/*説明リスト--------------------*/
+.information {
+  width: 1062px;
+  height: 300px;
+  float: left;
+  margin-bottom: 30px;
+}
+
+.info {
+  border: 1px solid #EACE34;
+  padding: 10px;
+  margin-left: 24px;
+  height: 210px;
+  overflow-y: auto;
+}
+
+
+.info dt {
+  color: #666;
+  font-size: 0.850em;
+  font-weight: 500;
+  border-bottom: 2px dotted #666;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.info dd {
+  font-size: 0.875em;
+  margin: 2px 0 10px 0;
+  text-align: left;
+  color: #3b3838;
+}
+
+/*aside------------------------------*/
+aside {
+  width: 220px;
+  float: right;
+  margin-top: 60px;
+}
+
+.ad1 {
+  margin-bottom: 10px;
+}
+
+.ad2 {
+  margin-bottom: 10px;
+}
+
+aside ad img {
+  vertical-align: bottom;
+
+}
+
+/*footer------------------------------*/
+footer {
+  background-color: #EACE34;
+  color: #fff;
+  clear: both;
+  padding: 20px 30px;
+
+}
+
+footer section {
+  width: 350px;
+  float: left;
+}
+
+footer h2 {
+  font-weight: 500;
+  font-size: 1.25em;
+  line-height: 40px;
+  margin-bottom: 5px;
+
+}
+
+footer address {
+  font-size: 0.75em;
+  line-height: 1.8em;
+  font-style: normal;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  /*
+  background-image:url(image/phone.png);
+  background-repeat:no-repeat;
+  background-size:contain;
+*/
+  /*  https://www.flaticon.com/free-icon/phone-call_455604?term=call&page=1&position=13*/
+}
+
+footer address span {
+  padding-left: 25px;
+
+
+}
+
+footer address p {
+  position: absolute;
+  margin-top: -1px;
+
+
+}
+
+.footer local {
+  width: 450px;
+  text-align;
+  float: right;
+  margin-top: 20px;
+}
+
+footer .local li {
+  display: inline-block;
+  /*  横並びにする*/
+}
+
+footer .local li a {
+  display: block;
+  color: #fff;
+  font-size: 1em;
+  text-decoration: none;
+  margin-left: 40px;
+  padding-top: 5px;
+}
+
+footer .local li a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+footer hr {
+  clear: both;
+  height: 1px;
+  background-color: #fff;
+  border: none;
+  margin-top: 110px;
+}
+
+footer small {
+  display: block;
+  text-align: center;
+  margin-top: 15px;
+}
+
+/*お酒の歴史(histry.html) ----------------------------*/
+/*　　＊他のページのCSSは同じドキュメント内でいいのか。順番は関係あるのか*/
+main h3 {
+  font-weight: 500;
+  font-size: 1.125em;
+  /*  padding-left: 100px;*/
+  margin-bottom: 10px;
+}
+
+.histry p img {
+  float: left;
+  margin: 2px 20px 5px 0;
+  background-color: #fff;
+  border: 1px solid #463f3f;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.last_image {
+  padding-bottom: 70px;
+}
+
+/*お酒と酒器(tool.html) ----------------------------*/
+main h3 {
+  font-weight: 500;
+  font-size: 1.125em;
+  padding-left: 24px;
+  margin-bottom: 10px;
+}
+
+.column p img {
+  float: left;
+  margin-right: 20px;
+  background-color: #fff;
+  padding: 8px 20px 0px;
+  border: 1px solid #463f3f;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.histry hr {
+  margin-bottom: 23px;
+  margin-left: 23px;
+}
+
+/*table内----------------------------*/
+main table {
+  border: 1px solid #5d5b5b;
+  margin: 50px 30px 70px 24px;
+  /*  ＊ボーダーが二重になる*/
+}
+
+main td {
+  border: 1px solid #5d5b5b;
+  padding: 5px;
+}
+
+main td p {
+  margin-right: 10px;
+  margin-bottom: 8px;
+  padding-top: 0;
+}
+
+main th {
+  font-weight: 500;
+  font-size: 2em;
+  background-color: #EACE34;
+  color: #fff;
+  text-shadow: 1px 1px 3px black;
+  line-height: 40px;
+  padding-left: 24px;
+}
+
+main td h3 {
+  font-size: 1.35em;
+  padding-left: 5px;
+  margin-top: 8px;
+  border-left: 20px solid #1d414e;
+  border-left-style: dotted;
+  line-height: 20px;
+  margin-left: 8px;
+
+  /*＊ボーダードットの位置がテキストと合わない*/
+}
+
+main td img {
+  border-radius: 5px;
+}
